@@ -1,0 +1,82 @@
+
+<!--
+  help taken from:
+  https://www.d3-graph-gallery.com/graph/line_change_data.html
+-->
+
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<html>
+
+<body>
+
+  <p class="title">Stabilization Wedges Game</p>
+
+  <p class = "info">Each of the following wedge strategies reduces carbon emissions by 1 billion tons per year. Choose 8 wedges to flatten the Stabilization Triangle by typing in a number of wedges next to each strategy name. Pay attention to the cost!</p>
+
+  <!-- input boxes -->
+  <div class = "wedges">
+
+    <div class ="toptwo">
+    <form class = "yellow">
+      Efficiency - Transport: <input type="text" id="box1" value="0" onchange="update('box1')"><br>
+      Conservation - Transport: <input type="text" id="box2" value="0" onchange="update('box2')"><br>
+      Efficiency - Buildings: <input type="text" id="box3" value="0" onchange="update('box3')"><br>
+      Efficiency - Electricity: <input type="text" id="box4" value="0" onchange="update('box4')"><br>
+    </form>
+
+    <form class = "red">
+      Nuclear Electricity: <input type="text" id="box9" value="0" onchange="update('box9')"><br>
+    </form>
+    </div>
+
+    <div class = "bottomtwo">
+    <form class = "blue">
+      CCS Electricity: <input type="text" id="box5" value="0" onchange="update('box5')"><br>
+      CCS Hydrogen: <input type="text" id="box6" value="0" onchange="update('box6')"><br>
+      CCS Synfuels: <input type="text" id="box7" value="0" onchange="update('box7')"><br>
+      Fuel Switching - Electricity: <input type="text" id="box8" value="0" onchange="update('box8')"><br>
+    </form>
+
+    <form class = "green">
+        Wind Electricity: <input type="text" id="box10" value="0" onchange="update('box10')"><br>
+        Solar Electricity: <input type="text" id="box11" value="0" onchange="update('box11')"><br>
+        Wind Hydrogen: <input type="text" id="box12" value="0" onchange="update('box12')"><br>
+        Biofuels: <input type="text" id="box13" value="0" onchange="update('box13')"><br>
+        Forest Storage: <input type="text" id="box14" value="0" onchange="update('box14')"><br>
+        Soil Storage: <input type="text" id="box15" value="0" onchange="update('box15')"><br>
+    </form>
+    </div>
+  </div>
+
+  <!-- graph -->
+  <div class = "vizs">
+  <div>
+  <div id="my_dataviz" class="graph"></div>
+  <p class="yNote">*Y-axis in billions of tons of carbon per year.</p>
+  </div>
+
+  <div>
+  <div id="barchart" class="bargraph"></div>
+  <p class="yNote">*Cost is just an approximation, not an actual amount.</p>
+  </div>
+  </div>
+  <br>
+
+  <a class="link" href="https://cmi.princeton.edu/wp-content/uploads/2020/01/wedges-teachers_guide.pdf">Learn more about each wedge</a>
+
+  <br>
+
+  <a class="link" href="index.html">Back to introduction</a>
+
+</body>
+
+</html>
+
+<script type="text/javascript" src="script.js"></script>

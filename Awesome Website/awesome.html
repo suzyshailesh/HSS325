@@ -1,0 +1,214 @@
+
+
+<!--
+Susmitha Shailesh
+I pledge my honor that I have abided by the Stevens Honor System.
+-->
+
+<html>
+
+	<head>
+		<title>Awesome Website</title>
+		<style>
+
+			body {
+				background-color: #D48166;
+			 	font-family: "Verdana";
+			 	font-size: 25px;
+			 	color: #373A36;
+			}
+
+			.full{
+				margin-left: auto;
+			    margin-right: auto;
+			    text-align: center;
+			    margin-top: 75px;
+			}
+
+			.topPic{
+				margin-left: auto;
+			    margin-right: auto;
+			    width: 300px;
+				display: block;
+			}
+
+			.link{
+				padding-top: 20px;
+				display: block;
+			}
+	
+			.container1 {
+				padding-top: 20px;
+				display: inline-block;
+
+			}
+
+			.container1 .btn{
+				padding: 12px 28px;
+				border-radius: 12px;
+				font-size: 16px;
+				background-color: #E6E2DD;
+				color: #373A36;
+				font-family: "Verdana";
+			}
+
+			.container2 {
+				padding-top: 20px;
+				display: inline-block;
+
+			}
+
+			.container2 .btn{
+				padding: 12px 28px;
+				border-radius: 12px;
+				font-size: 16px;
+				background-color: #E6E2DD;
+				color: #373A36;
+				font-family: "Verdana";
+			}
+
+			.hitPic{
+				display: none;
+			}
+
+			.hitPic img{
+				margin-left: auto;
+			    margin-right: auto;
+			    width: 300px;
+			}
+
+			.noHitPic{
+				display:none;
+			}
+
+			.noHitPic img{
+				margin-left: auto;
+			    margin-right: auto;
+			    width: 300px;
+			}
+
+			.tryAgain{
+				display: none;
+			}
+
+			.tryAgain .btn{
+				padding: 12px 28px;
+				border-radius: 12px;
+				font-size: 16px;
+				background-color: #E6E2DD;
+				color: #373A36;
+				font-family: "Verdana";
+			}
+
+			a:link{
+				color: #373A36;
+			}
+
+			a:visited{
+				color: #373A36;
+			}
+
+			a:hover{
+				color: #E6E2DD;
+			}
+
+
+		</style>
+
+		<script>
+
+			function hit(){
+				var hitPic = document.getElementById("hitPic");
+				var noHitPic = document.getElementById("noHitPic");
+				var tryAgain = document.getElementById("tryAgain");
+				var button1 = document.getElementById("container1");
+				var button2 = document.getElementById("container2");
+				var topPic = document.getElementById("topPic");
+
+				hitPic.style.display = 'block';
+				noHitPic.style.display = 'none';
+				tryAgain.style.display = 'block';
+				button1.style.display = 'none';
+				button2.style.display = 'none';
+				topPic.style.display = 'none';
+			}
+
+			function noHit(){
+				var hitPic = document.getElementById("hitPic");
+				var noHitPic = document.getElementById("noHitPic");
+				var tryAgain = document.getElementById("tryAgain");
+				var button1 = document.getElementById("container1");
+				var button2 = document.getElementById("container2");
+				var topPic = document.getElementById("topPic");
+
+				hitPic.style.display = 'none';
+				noHitPic.style.display = 'block';
+				tryAgain.style.display = 'block';
+				button1.style.display = 'none';
+				button2.style.display = 'none';
+				topPic.style.display = 'none';
+			}
+
+			function tryAgain(){
+				var hitPic = document.getElementById("hitPic");
+				var noHitPic = document.getElementById("noHitPic");
+				var tryAgain = document.getElementById("tryAgain");
+				var button1 = document.getElementById("container1");
+				var button2 = document.getElementById("container2");
+				var topPic = document.getElementById("topPic");
+
+				hitPic.style.display = 'none';
+				noHitPic.style.display = 'none';
+				tryAgain.style.display = 'none';
+				button1.style.display = 'inline-block';
+				button2.style.display = 'inline-block';
+				topPic.style.display = 'block';
+			}
+
+
+
+		</script>
+		
+	</head>
+
+	<body>
+
+
+		<div class="full">
+
+			<strong>Welcome to this awesome website!!</strong>
+
+			<p>An important question: Should this kitty hit this candle?</p>
+
+
+			<img src="hmm.gif" class="topPic" id="topPic">
+
+			<div class="container1" id="container1">
+				<button class="btn" onclick="hit()">Hit candle!</button>
+			</div>
+
+			<div class="container2" id="container2">
+				<button class="btn" onclick="noHit()">Don't hit candle!</button>
+			</div>
+
+			<div id="hitPic" class="hitPic">
+				<img src="ouch.gif">
+				<p>Sad kitty :(</p>
+			</div>
+
+			<div id="noHitPic" class="noHitPic">
+				<img src="cute.gif">
+				<p>Happy kitty :)</p>
+			</div>
+
+			<div class="tryAgain" id="tryAgain">
+				<button class="btn" onclick="tryAgain()">Try again?</button>
+			</div>
+
+			<a class="link" href="https://www.youtube.com/watch?v=tpiyEe_CqB4">More cute cats!</a>
+
+		</div>
+
+	</body>
+
+</html>

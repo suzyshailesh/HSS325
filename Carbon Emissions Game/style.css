@@ -1,0 +1,230 @@
+
+.info{
+  color: #FAF1CF;
+  font-size: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 600px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: auto;
+  display: block;
+}
+
+a:link, a:visited {
+  background-color: #5DAA68;
+  color: #FAF1CF;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 25px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+
+  font-family: Helvetica;
+  font-size: 20px;
+}
+
+a:hover, a:active {
+  background-color: #3F6844;
+}
+
+.wedges{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.toptwo{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottomtwo{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.vizs{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.svg {
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.yellow{
+  list-style: none;
+  color: #c9c342;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.yellow input[type=text]{
+  width: 15%;
+  padding: 4px 18px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #c9c342;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+}
+
+.blue{
+  list-style: none;
+  color: #42a5c9;
+  display: inline-block;
+}
+
+.blue input[type=text]{
+  width: 15%;
+  padding: 4px 18px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color:  #42a5c9;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+}
+
+.red{
+  list-style: none;
+  color: #c94742;
+  display: inline-block;
+}
+
+.red input[type=text]{
+  width: 15%;
+  padding: 4px 18px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color:  #c94742;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+}
+
+.green{
+  list-style: none;
+  color: #3fbf61;
+  display: inline-block;
+}
+
+.green input[type=text]{
+  width: 15%;
+  padding: 4px 18px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color:  #3fbf61;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+}
+
+.graph{
+
+}
+
+.bar {
+  fill: #aa5d5d;
+}
+.area {
+  fill: #5DAA68;
+}
+
+.redArea{
+  fill: red;
+}
+
+.line{
+  fill: none;
+  stroke: #3F6844;
+  stroke-width: 5;
+}
+
+.Xaxis line{
+  stroke: #FAF1CF;
+}
+.Xaxis path{
+  stroke: #FAF1CF;
+}
+.Xaxis text{
+  fill: #FAF1CF;
+  font-size: 12px;
+}
+.xLabel{
+  font-size: 15px;
+  fill: #FAF1CF;
+}
+
+.Yaxis line{
+  stroke: #FAF1CF;
+}
+.Yaxis path{
+  stroke: #FAF1CF;
+}
+.Yaxis text{
+  fill: #FAF1CF;
+  font-size: 12px;
+}
+.yLabel{
+  font-size: 15px;
+  fill: #FAF1CF;
+}
+
+.Xaxis2 line{
+  stroke: #FAF1CF;
+}
+.Xaxis2 path{
+  stroke: #FAF1CF;
+}
+.Xaxis2 text{
+  fill: #FAF1CF;
+  font-size: 20px;
+}
+
+.yNote{
+  color: #FAF1CF;
+  font-size: 12px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 500px;
+  text-align: center;
+}
+
+.title{
+  color: #FAF1CF;
+  font-size: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 500px;
+  text-align: center;
+}
+
+
+body{
+  background-color: #292b28;
+  font-family: Helvetica;
+
+}
