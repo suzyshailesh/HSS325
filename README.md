@@ -1,5 +1,4 @@
-# HST325
-Visualizing Society
+Visualizing Society - Data Visualization
 
 Visit the websites!
 
